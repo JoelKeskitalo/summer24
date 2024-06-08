@@ -6,6 +6,98 @@
     <title>HTML elements</title>
 </head>
 <body>
+    <header>
+        <h1>Header denotes, as the name implies, the top part of the page</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="home">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="contact">Come</a></li>
+            <li><a href="profile">Profile</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>Home</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Accusamus quo maxime corrupti voluptatibus dolores asperiores quibusdam nihil, 
+                placeat dolor voluptatum officiis id officia excepturi dicta, voluptates laborum! Sint, sed incidunt?</p>
+        </section>
+
+        <section id="about">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Accusamus quo maxime corrupti voluptatibus dolores asperiores quibusdam nihil, 
+                placeat dolor voluptatum officiis id officia excepturi dicta, voluptates laborum! Sint, sed incidunt?</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <br>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+            </form>
+        </section>
+
+        <div id="textformateringselement">
+            <p><strong>TEXTFORMATERINGSELEMENT:</strong></p>
+            <p><em>Gör texten kursiv</em></p>
+            <p><u>Understryker texten</u></p>
+            <p><a href="#">Hyperlänk</a></p>
+            <p><img src="picture.jpg" alt="this is my picture"></p>
+            <p><br>Radbrytning</p>
+            <p><hr>Horisontell linje</p>
+        </div>
+
+        <ul>
+            <!-- ul: Skapar en oordnad lista -->
+            <li>li: Skapar ett listobjekt</li>
+            <li>Ett annat listobjekt</li>
+        </ul>
+    
+        <ol>
+            <!-- ol: Skapar en ordnad lista -->
+            <li>Första objektet</li>
+            <li>Andra objektet</li>
+        </ol>
+
+            <!-- Tabeller -->
+    <table>
+        <!-- table: Skapar en tabell -->
+        <tr>
+            <!-- tr: Skapar en rad i en tabell -->
+            <th>I</th>
+            <th>II</th>
+        </tr>
+        <tr>
+            <td>td: Skapar en tabellcell</td>
+            <td>En annan cell</td>
+        </tr>
+    </table>
+
+    <video controls>
+        <!-- video: Infogar en videospelare -->
+        <source src="video.mp4" type="video/mp4">
+        Din webbläsare stödjer inte videouppspelning.
+    </video>
+
+    <audio controls>
+        <!-- audio: Infogar en ljudspelare -->
+        <source src="audio.mp3" type="audio/mp3">
+        Din webbläsare stödjer inte ljuduppspelning.
+    </audio>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My webpage</p>
+    </footer>
     
 </body>
 </html>
