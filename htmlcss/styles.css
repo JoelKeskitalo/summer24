@@ -26,6 +26,8 @@ h1 {
 
 h2 {
     text-align: center;
+    text-decoration: underline;
+    margin-bottom: 0.5rem;
 }
 
 p {
@@ -56,6 +58,7 @@ li {
     margin: 2rem;
 }
 
+
 #contact {
     display: flex;
     justify-content: center;
@@ -66,6 +69,7 @@ li {
 #contact h2 {
     text-align: start;
 }
+
 
 form {
     display: flex;
@@ -78,6 +82,22 @@ form input {
 
 label {
     margin-right: 0.5rem;
+}
+
+#clickMe {
+    background-color: grey;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    transition: background-color 3s, transform 3s;
+}
+
+#clickMe:hover {
+    background-color: bisque;
 }
 
 
@@ -105,4 +125,24 @@ label {
 footer {
     display: flex;
     justify-content: center;
+}
+
+/* små enheter, telefoner med 576px och uppåt */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+/* medelstora enheter, surfplattor med 768 och uppåt */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    
+}
+
+/* stora enheter, datorer med 992px och uppåt */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    
+}
+
+/* extra stora enheter, stora datorer med 1200 px och uppåt */
+@media (min-width: 1200px) {
+    
 }
