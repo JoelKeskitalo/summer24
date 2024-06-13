@@ -1,0 +1,10 @@
+img mapping: https://www.w3schools.com/html/html_images_imagemap.asp
+
+kom ihåg skillnaden på inline (tar upp nödvändigt) och block (tar upp hela) elements 
+
+iframes (maaaaybe....)
+
+CSS frameworks (w3.css, bootstrap)
+CSS float property
+
+remember symbols/emojis

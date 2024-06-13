@@ -1,7 +1,11 @@
 body {
     font-family:'Courier New', Courier, monospace;
-    background-color: black;
-    color: red;
+    color: bisque;
+    background-image: url('warhammer.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center, center;
+    background-attachment: fixed;
     margin-left: 15rem;
     margin-right: 15rem;
     padding: 0;
@@ -56,6 +60,7 @@ li {
 #main-content {
     display: flex;
     margin: 2rem;
+    margin-top: 10rem;
 }
 
 
