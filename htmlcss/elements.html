@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <title>HTML elements</title>
 </head>
 <body>
     <header>
-        <h1>Header denotes, as the name implies, the top part of the page</h1>
+        <h1>This is a document containing useful HTML elements and CSS styling</h1>
     </header>
 
     <nav>
@@ -20,19 +21,21 @@
     </nav>
 
     <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                Accusamus quo maxime corrupti voluptatibus dolores asperiores quibusdam nihil, 
-                placeat dolor voluptatum officiis id officia excepturi dicta, voluptates laborum! Sint, sed incidunt?</p>
-        </section>
+        <div id="main-content">
+            <section id="home">
+                <h2>Home</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Accusamus quo maxime corrupti voluptatibus dolores asperiores quibusdam nihil, 
+                    placeat dolor voluptatum officiis id officia excepturi dicta, voluptates laborum! Sint, sed incidunt?</p>
+            </section>
 
-        <section id="about">
-            <h2>About</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                Accusamus quo maxime corrupti voluptatibus dolores asperiores quibusdam nihil, 
-                placeat dolor voluptatum officiis id officia excepturi dicta, voluptates laborum! Sint, sed incidunt?</p>
-        </section>
+            <section id="about">
+                <h2>About</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Accusamus quo maxime corrupti voluptatibus dolores asperiores quibusdam nihil, 
+                    placeat dolor voluptatum officiis id officia excepturi dicta, voluptates laborum! Sint, sed incidunt?</p>
+            </section>
+        </div>
 
         <section id="contact">
             <h2>Contact</h2>
@@ -55,43 +58,45 @@
             <p><hr>Horisontell linje</p>
         </div>
 
-        <ul>
-            <!-- ul: Skapar en oordnad lista -->
-            <li>li: Skapar ett listobjekt</li>
-            <li>Ett annat listobjekt</li>
-        </ul>
+        <div id="theRest">
+            <ul>
+                <!-- ul: Skapar en oordnad lista -->
+                <li>li: Skapar ett listobjekt</li>
+                <li>Ett annat listobjekt</li>
+            </ul>
     
-        <ol>
-            <!-- ol: Skapar en ordnad lista -->
-            <li>Första objektet</li>
-            <li>Andra objektet</li>
-        </ol>
+            <ol>
+                <!-- ol: Skapar en ordnad lista -->
+                <li>Första objektet</li>
+                <li>Andra objektet</li>
+            </ol>
 
-            <!-- Tabeller -->
-    <table>
-        <!-- table: Skapar en tabell -->
-        <tr>
-            <!-- tr: Skapar en rad i en tabell -->
-            <th>I</th>
-            <th>II</th>
-        </tr>
-        <tr>
-            <td>td: Skapar en tabellcell</td>
-            <td>En annan cell</td>
-        </tr>
-    </table>
+                <!-- Tabeller -->
+        <table>
+            <!-- table: Skapar en tabell -->
+            <tr>
+                <!-- tr: Skapar en rad i en tabell -->
+                <th>I</th>
+                <th>II</th>
+            </tr>
+            <tr>
+                <td>td: Skapar en tabellcell</td>
+                <td>En annan cell</td>
+            </tr>
+        </table>
 
-    <video controls>
-        <!-- video: Infogar en videospelare -->
-        <source src="video.mp4" type="video/mp4">
-        Din webbläsare stödjer inte videouppspelning.
-    </video>
+        <video controls>
+            <!-- video: Infogar en videospelare -->
+            <source src="video.mp4" type="video/mp4">
+            Din webbläsare stödjer inte videouppspelning.
+        </video>
 
-    <audio controls>
-        <!-- audio: Infogar en ljudspelare -->
-        <source src="audio.mp3" type="audio/mp3">
-        Din webbläsare stödjer inte ljuduppspelning.
-    </audio>
+        <audio controls>
+            <!-- audio: Infogar en ljudspelare -->
+            <source src="audio.mp3" type="audio/mp3">
+            Din webbläsare stödjer inte ljuduppspelning.
+        </audio>
+    </div>
 
     </main>
 
