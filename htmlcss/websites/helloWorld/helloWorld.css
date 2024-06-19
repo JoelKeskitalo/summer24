@@ -24,7 +24,7 @@ h1 {
     text-decoration: none
 }
 
-#war {
+span {
     color: rgb(103, 4, 4);
 }
 
@@ -156,7 +156,7 @@ figure {
 }
 
 #papasmurf {
-    width: 100%;
+    width: 80%;
     border: 3px solid black;
 }
 
