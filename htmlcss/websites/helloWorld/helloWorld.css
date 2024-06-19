@@ -21,7 +21,7 @@ body {
 
 h1 {
     color: rgb(165, 162, 162);
-    text-decoration: underline;
+    text-decoration: none
 }
 
 #war {
@@ -56,7 +56,7 @@ header {
 }
 
 nav {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 ul {
@@ -79,20 +79,20 @@ button {
     padding-right: 2rem;
     font-size: 1rem;
     background: none;
-    color: bisque;
+    color: rgb(255, 196, 196);
     cursor: pointer;
     text-align: center;
     transition: background-color 3s, transform 3s;
 }
 
 button:hover {
-    background-color: black;
+    background-color: rgb(85, 2, 2);
 }
 
 
 
 .main-content {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.9);
     border-radius: 1rem;
     margin: 3rem;
     text-align: center;
@@ -138,17 +138,21 @@ figure {
     margin-top: 5rem;
 }
 
-#scouring #column-2 {
-    grid-column: 2;
+#scouring #column-1 {
+    grid-column: 1;
     margin-bottom: 2rem;
 }
 
-#scouring #column-3 {
-    grid-column: 3;
+#scouring #column-2 {
+    grid-column: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+#scouring #column-3 {
+
 }
 
 #papasmurf {
@@ -189,7 +193,7 @@ figure {
 
 /* FOOTER */ 
 footer {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.9);
     display: flex;
     justify-content: space-around;
 }
