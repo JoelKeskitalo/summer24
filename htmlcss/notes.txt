@@ -8,3 +8,5 @@ CSS frameworks (w3.css, bootstrap)
 CSS float property
 
 remember symbols/emojis
+
+w3schools: FORM
