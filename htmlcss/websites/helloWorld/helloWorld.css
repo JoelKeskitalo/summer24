@@ -79,7 +79,7 @@ button {
     padding-right: 2rem;
     font-size: 1rem;
     background: none;
-    color: rgb(255, 196, 196);
+    color: bisque;
     cursor: pointer;
     text-align: center;
     transition: background-color 3s, transform 3s;
@@ -111,6 +111,7 @@ button:hover {
     width: 70%;
     color: rgb(173, 171, 171);
     letter-spacing: 0.1rem;
+    text-align: center;
 }
 
 figure {
@@ -126,8 +127,8 @@ figure {
 
 #siegedescription {
     color: bisque;
+    font-size: 0.7rem;
 }
-
 
 
 #scouring {
@@ -152,12 +153,35 @@ figure {
 }
 
 #scouring #column-3 {
+    grid-column: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
+#scouring #column-4 {
+    grid-column: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#papasmurf-figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #papasmurf {
-    width: 80%;
+    width: 100%;
     border: 3px solid black;
+}
+
+#papasmurfdescription {
+    color: bisque;
+    font-size: 0.7rem;
 }
 
 #scouring-text {
