@@ -39,7 +39,7 @@ h3 {
 }
 
 p {
-    color: bisque;
+    color: rgb(173, 171, 171);
 }
 
 a {
@@ -99,6 +99,49 @@ button:hover {
     padding: 1rem;
 }
 
+#main-title {
+    font-size: 5rem;
+    padding: 0;
+    margin: 0;
+}
+
+#home-buttons-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#chaosspacemarine {
+    width: 50%;
+    border: 3px solid black;
+}
+
+.menu-button {
+    margin-left: 2rem;
+    color: rgb(130, 3, 3);
+}
+
+.menu-button:hover {
+    background-color: rgb(148, 146, 146);
+}
+
+#examplepictures-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#examplepicturethree {
+    width: 80%;
+}
+
+.examplepicture-description {
+    color: bisque;
+    font-size: 0.8rem;
+    width: 70%;
+}
+
 .content {
     display: flex;
     flex-direction: column;
@@ -112,7 +155,49 @@ button:hover {
     color: rgb(173, 171, 171);
     letter-spacing: 0.1rem;
     text-align: center;
+    margin: 3rem;
 }
+
+#support {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.support-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.support-buttons {
+    margin-top: 2rem;
+    margin-left: 3rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.support-buttons img {
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+.support-buttons:hover {
+    background-color: white;
+}
+
+.supportbutton-text {
+    color: black;
+    margin-left: 1rem;
+}
+
+
 
 figure {
     display: flex;
