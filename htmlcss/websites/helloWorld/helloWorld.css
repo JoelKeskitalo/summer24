@@ -38,6 +38,20 @@ h3 {
     color: white;
 }
 
+h4 {
+    color: rgb(161, 109, 50);
+    text-decoration: underline;
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+h4:hover {
+    color: rgb(85, 2, 2);
+    cursor: pointer;
+}
+
+
+
 p {
     color: rgb(173, 171, 171);
 }
@@ -91,13 +105,69 @@ button:hover {
 
 
 
-.main-content {
+.main-content { /* the transparent box, containing all main content */ 
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 1rem;
     margin: 3rem;
     text-align: center;
     padding: 1rem;
 }
+
+.content { /* article, containing content withint main-content */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.content-text { /* the format for text within content-wrapper */ 
+    width: 70%;
+    color: rgb(173, 171, 171);
+    letter-spacing: 0.1rem;
+    text-align: center;
+    margin: 3rem;
+}
+
+#characters-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    width: 80%;
+    height: 80%;
+}
+
+.character-content {
+    border: 1px solid bisque;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+.character-image-wrapper {
+    padding: 1rem;
+}
+
+#urban-image {
+    width: 50%;
+}
+
+#glestandadegunnel-image {
+    width: 80%;
+}
+
+#larsolof-image {
+    width: 90%;
+}
+
+#brunstigebenny-image {
+    width: 70%;
+}
+
+
+
+
 
 #main-title {
     font-size: 5rem;
@@ -142,21 +212,7 @@ button:hover {
     width: 70%;
 }
 
-.content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
-}
 
-.content-text {
-    width: 70%;
-    color: rgb(173, 171, 171);
-    letter-spacing: 0.1rem;
-    text-align: center;
-    margin: 3rem;
-}
 
 #support {
     margin-top: 3rem;
@@ -291,6 +347,7 @@ figure {
 #scouring-button:hover {
     background-color: rgb(121, 1, 1);
 }
+
 
 
 
