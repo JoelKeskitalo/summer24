@@ -61,27 +61,35 @@ canRide(personTwo)
 
 
 class Person {
-    constructor(name, age, access) {
+    constructor(name, age, access, weight, height ) {
         this.name = name
         this.age = age
         this.access = access
+
+        this.weight = weight
+        this.height = height
     }
 
     canRide = () => {
         return this.access === 'large' || this.access === 'platinum'
     }
 
+    calculateBMI = () => {
+        return this.weight / (this.height * this.height)
+    }
+
 }
 
-const patrik = new Person('Patrik', 5, 'small')
-const dennis = new Person('Dennis', 86, 'platinum')
-
-console.log(dennis.canRide())
+const patrik = new Person('Patrik', 5, 'small', 109, 1.51)
+const dennis = new Person('Dennis', 86, 'platinum', 56, 1.62 )
 
 
+console.log(dennis.canRide(), dennis.calculateBMI(), patrik.calculateBMI())
 
 // BMI ( Body Mass Index ) sägs vara ett hälsomått som visar på under eller övervikt. Det bör dock tas med en nypa salt då vi alla människor är unika ( och awesome! ).
 // formel: kroppsvikt i kg / (kroppslängd i meter * kroppslängd i meter)
+
+
 
 
 // Gör ett program som tar ett nummer ( 1-7 ) och skriver ut vilken veckodag numret motsvarar. Ex. 1 = måndag, 3 = untzdag. Om numret inte motsvarar någon veckodag skall programmet skriva ut false.
