@@ -119,9 +119,49 @@ const isAPalindrom = (word) => {
 isAPalindrom('lol')
 
 // Skriv en funktion som retunerar längden av det kortaste ordet i en mening
+const returnShortestWord = (sentence) => {
+    let splittedSentence = sentence.split(' ')
+    
+    let smallestWord = Infinity
+
+    for (let word of splittedSentence) {
+        if(word.length < smallestWord) {
+            smallestWord = word.length
+        }
+    }
+
+    return console.log(smallestWord)
+}
+
+returnShortestWord('Hej, jag heter Mickan och jag gillar Majas kurs, hi')
+
+const sentence = 'Tim is a motherfucker'
+const timWordSplitted = sentence.split(' ')
+const shortest = Math.min(...timWordSplitted.map(word => word.length))
+console.log(shortest)
 
 // Skriv en funktion som tar tre parametrar: name, city och favoriteColor. 
 // Den ska skriva ut informationen till konsolen i en fullständig mening. Exempel "Välkommen Namn från Göteborg med favvofärg blått". 
 // Skriv kod som anropar funktionen med lämpliga värden
+
+class Person {
+    constructor(name, city, favoritColor, favoritShow, favoritArtist) {
+        this.name = name
+        this.city = city
+        this.favoritColor = favoritColor
+
+        this.favoriteShow = favoritShow
+        this.favoriteArtist = favoritArtist
+    }
+
+    greetings = () => {
+        console.log('Hello ' + this.name + ' who lives in ' + this.city + ' with the favoritcolor ' + this.favoritColor)
+    }
+}
+
+
+const Amanda = new Person('Amanda', 'Örebro', 'Blue', 'Game of Thrones', 'Småland')
+const Johan = new Person('Johan', 'Enköping', 'Orange', 'Better Call Saul', 'Taylor Swift')
+Amanda.greetings()
 
 
