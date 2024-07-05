@@ -82,16 +82,138 @@ console.log(position)
 // I strängen ovan, plocka fram de 7 sista tecknena.
 const lazyPeople = 'copemastersallofyou'
 const firstFiveLetters = lazyPeople.substring(0, 5)
+const lastSevenLetters = lazyPeople.substring(lazyPeople.length - 8)
 console.log(firstFiveLetters)
-
-
-
-
+console.log(lastSevenLetters)
 
 
 // FILTER
+const movieArray = ['The Fellowship of the Ring', 'Dune', 'Legend', 'World of Wall Street', 'Limepark: The Movie', 'The Lego Movie']
+const filteredArray = movieArray.filter((element) => element.length > 5)
+console.log(filteredArray)
 
-// SORT 
+
+// Gör filmerna till objekt och ge de properties: title, year, rating
+// och sen lista de som har en rating över 9!
+
+
+class Movie {
+    title
+    year
+    imdbRating
+
+    constructor(title, year, imdbRating) {
+        this.title = title
+        this.year = year
+        this.imdbRating = imdbRating
+    }
+}
+
+const movies = [
+    new Movie("The Shawshank Redemption", 1994, 9.3),
+    new Movie("The Godfather", 1972, 9.2),
+    new Movie("The Dark Knight", 2008, 9.0),
+    new Movie("Pulp Fiction", 1994, 8.9),
+    new Movie("The Lord of the Rings: The Return of the King", 2003, 8.9),
+    new Movie("Schindler's List", 1993, 8.9),
+    new Movie("Fight Club", 1999, 8.8),
+    new Movie("Inception", 2010, 8.8),
+    new Movie("The Matrix", 1999, 8.7),
+    new Movie("Goodfellas", 1990, 8.7)
+]
+
+const highestRatingMovies = movies
+    .filter((movie => movie.imdbRating >= 9))
+    .map((movie) => movie.title)
+console.log(highestRatingMovies) 
+
+movies.map(m => { console.log(m.imdbRating <= 9 && m.title)})
+
+const lowestRatingMovies = movies.reduce((accumulator, movie) => {
+    if(movie.imdbRating < 9) {
+        accumulator.push(movie.title)
+    }
+
+    return accumulator
+}, [])
+
+console.log(lowestRatingMovies)
+
+// Hämta ut filmerna som innehåller ordet "the"
+const theWord = movies.filter((movie => movie.title.includes('The')))
+console.log(theWord)
+
+// Hämta ut filmer som bara innehåller två ord
+const twoWords = movies.filter(movie => {
+    const wordCount = movie.title.split(' ').length
+    return wordCount === 2
+})
+console.log(twoWords)
+
+// Hämta ut filmer som börjar med bokstaven "t"
+const startsWithT = movies.filter(movie => movie.title.charAt(0).toUpperCase() === 'T')
+console.log(startsWithT)
+
+// Hämta ut alla filmer som innehåller en vokal
+const includesVowels = movies.filter(movie => movie.title.includes('a', 'e', 'i', 'o', 'u', 'y'))
+console.log(includesVowels)
+
+// Hämta ut filmer vars titel har minst 3 ord
+const threeWordTitle = movies.filter(movie => {
+    const titleWordCount = movie.title.split(' ').length
+    return titleWordCount >= 3
+})
+console.log(threeWordTitle)
+
+// Hämta ut alla filmer vars titel har max 3 ord
+const maxThreeWordTitle = movies.filter(movie => {
+    const titleWordCount = movie.title.split(' ').length
+    return titleWordCount <= 3
+})
+console.log(maxThreeWordTitle)
+
+
+// SORT
+const months = ['March', 'Jan', 'Feb', 'Dec']
+months.sort()
+console.log(months)
+
+
+class Person {
+    constructor(name, age, occupation, city) {
+        this.name = name
+        this.age = age
+        this.occupation = occupation
+        this.city = city
+    }
+}
+
+const theCrazyPeople = [
+    new Person('Amanda', 30, 'Developer', 'Örebro',),
+    new Person('Patrik', 36, 'Developer', 'Örebro'),
+    new Person('Lasse', 66, 'Pension', 'Nora'),
+    new Person('Lars-Olof', 54, 'Hobo', 'Somewhere'),
+    new Person('Fredrika', 40, 'Gardener', 'Lindesberg'),
+    new Person('Therese', 48, 'Hospice', 'Almby'),
+    new Person('Tim', 32, 'Magician', 'Hjarsta')
+]
+
+const compareFunction = (a, b) => {
+    return a.age - b.age
+}
+
+const sortOldPeople = (people, ageLimit) => {
+    const oldPeople = people.filter(person => person.age > ageLimit)
+    oldPeople.sort()
+    return oldPeople
+}
+
+console.log(sortOldPeople(theCrazyPeople, 35))
+
+
+// sortera personer efter ålder, både yngre till äldre och äldre till yngre
+
+// sortera personer alfabetisk ordning
 
 // MAP
 
