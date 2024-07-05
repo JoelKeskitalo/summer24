@@ -89,10 +89,46 @@ console.log(dennis.canRide(), dennis.calculateBMI(), patrik.calculateBMI())
 // BMI ( Body Mass Index ) sägs vara ett hälsomått som visar på under eller övervikt. Det bör dock tas med en nypa salt då vi alla människor är unika ( och awesome! ).
 // formel: kroppsvikt i kg / (kroppslängd i meter * kroppslängd i meter)
 
-
-
-
 // Gör ett program som tar ett nummer ( 1-7 ) och skriver ut vilken veckodag numret motsvarar. Ex. 1 = måndag, 3 = untzdag. Om numret inte motsvarar någon veckodag skall programmet skriva ut false.
+const weekdayNumber = (number) => {
+
+    if (isNaN(number)) {
+        return console.log('Fuck you!')
+    }
+
+    switch(number) {
+        case 1:
+            return console.log('monday')
+        case 2:
+            return console.log('tuesday')
+        case 3:
+            return console.log('wednesday')
+        case 4:
+            return console.log('thursday')
+        case 5:
+            return console.log('friday')
+        case 6:
+            return console.log('saturday')
+        case 7:
+            return console.log('sunday')
+    }
+}
+
+weekdayNumber()
+
 
 // Gör ett program som tar ett nummer ( 1-12 ) och skriver ut vilken månad numret motsvarar. Ex. 1 = januari, 10 = oktober. Om numret inte motsvarar någon månad skall programmet skriva ut false.
+const months = ['jan', 'feb', 'mars', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december']
+
+const monthsNumber = (number) => {
+    if(number >= 0 && number <= 12) {
+        return console.log(months[number - 1])
+    } else {
+        return false
+    }
+
+}
+
+monthsNumber(2)
+
 
