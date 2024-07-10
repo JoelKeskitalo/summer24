@@ -1,0 +1,16 @@
+REACT IS A LIBRARY FOR BUILING INTERACTIVE USER INTERFACES
+
+JSX:
+This markup syntax is called JSX. It is a JavaScript syntax extension popularized by React. 
+Putting JSX markup close to related rendering logic makes React components easy to create, maintain, and delete.
+
+DOM (normal):
+The Document Object Model (DOM) connects web pages to scripts or programming languages by representing the structure of a document—such as the HTML representing a web page—in memory. 
+Usually it refers to JavaScript, even though modeling HTML, SVG, or XML documents as objects are not part of the core JavaScript language.
+
+
+React = Declarative UI programming
+With React, you define the target UI state(s) - not the steps to get there!
+Instead, React will figure out and perform the necessary steps. 
+
+DECLARATIVE: Define the goal, not the steps. 
