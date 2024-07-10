@@ -28,11 +28,14 @@ for (const number of numbersForOf) {
     console.log(number)
 }
 
+
+
 // forEach (arrayer)
 const numbersForEach = [1, 2, 3, 4, 5]
 numbersForEach.forEach((number) => {
     console.log(number)
 })
+
 
 
 // forIn (objekt)
@@ -42,3 +45,20 @@ for (const key in person) {
         console.log(`${key}: ${person[key]}`);
     }
 }
+
+// filter
+const array = ['joel', 'amanda', 'tim', 'patrik']
+const result = array.filter((name) => name.length > 3)
+console.log(result)
+
+// map 
+const array1 = [1, 2, 3, 4, 5]
+const doubled = array1.map((number) => number * 2)
+console.log(doubled)
+
+// reduce
+const arrayTest = [1, 2, 3, 4, 5]
+const initialValue = 0
+const sumWithInitial = arrayTest.reduce((accumulator, currentValue) => accumulator + currentValue, initialValue)
+
+console.log(sumWithInitial)

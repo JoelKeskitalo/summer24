@@ -169,7 +169,7 @@ subtractionForEach(numbers)
 
 
 /* const newNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] */
-const oddNumbers = (array) => {
+ // const oddNumbers = (array) => {
 
     let oddNumbers = 0
 
@@ -183,7 +183,7 @@ const oddNumbers = (array) => {
     return oddNumbers
 }
 
-oddNumbers(newNumbers)
+/* oddNumbers(newNumbers) */
 
 
 // WHILE LOOPS 
@@ -358,3 +358,119 @@ const movie9 = new Movie('The Matrix', 'Lana Wachowski, Lilly Wachowski', 8.7, 1
 const movie10 = new Movie('Goodfellas', 'Martin Scorsese', 8.7, 1990, 'Biography');
 
 
+// enkla övningar 
+
+// Skapa en funktion som tar en array med siffror och använder en for-loop för att räkna ut summan av alla element.
+for (let i = 0; i < finalNumbers.length; i++) {
+    console.log(i)
+}
+
+// Skapa en funktion som tar en array med siffror och använder en while-loop för att räkna ut produkten av alla element.
+let i = 0
+let totalSum = 0
+while (i < finalNumbers.length) {
+    i++
+    totalSum += i
+}
+console.log(totalSum)
+
+
+// Skapa en funktion som tar en array med siffror och använder en for...of-loop 
+// för att skapa en ny array där varje element är kvadraten av elementen i den ursprungliga arrayen.
+const squaredNumbers = (numbersArray) => {
+    let squaredArray = []
+
+    for (const number of numbersArray) {
+        squaredArray.push(number / 4)
+    }
+
+    return console.log(squaredArray)
+
+}
+
+squaredNumbers(finalNumbers)
+
+
+
+const oddNumbersAgain = (numbersArray) => {
+    numbersArray.forEach((number) => {
+        if(number % 2 !== 0) {
+            console.log(number)
+        }
+    })
+}
+
+oddNumbersAgain(finalNumbers)
+
+// Skapa en funktion som tar två arrayer med siffror av samma längd och använder en for-loop
+// för att skapa en ny array där varje element är summan av motsvarande element i de två ursprungliga arrayerna.
+
+const moreNumbers = [15, 3, 56, 187, 52, 81]
+
+const combineArrays = (arrayOne, arrayTwo) => {
+
+    let result = []
+
+    for (let i = 0; i < arrayOne.length; i++) {
+        result.push(arrayOne[i] + arrayTwo[i])
+    }
+
+    return console.log(result)
+
+}
+
+combineArrays(finalNumbers, moreNumbers)
+
+
+// Skapa en funktion som tar en array med siffror och använder en while-loop
+//  för att skapa en ny array som endast innehåller de siffror som är större än ett visst värde.
+const finalNumbers = [10, 25, 8, 63, 255, 53]
+
+const biggerThanFifty = (numbersArray) => {
+    let overFifty = []
+
+    let i = 0
+    while (i < numbersArray.length) {
+        if(numbersArray[i] > 50) {
+            overFifty.push(numbersArray[i])
+        }
+        i++
+    }
+    return console.log(overFifty)
+}
+
+biggerThanFifty(finalNumbers)
+
+
+const persons = [
+     {
+        name: 'Joel',
+        age: 32,
+        country: 'Sweden'
+     },
+    
+    {
+        name: 'Madao',
+        age: 56,
+        country: 'Dumpster'
+    }
+]
+
+
+// Skapa en funktion som tar en array med objekt som har egenskaper som name och age, 
+// och använder en forEach-loop för att skapa en ny array som bara innehåller namnen från dessa objekt.
+const findTheName = (personArray) => {
+    let names = []
+    personArray.forEach((person) => {
+        names.push(person.name)
+    })
+
+    return console.log(names)
+}
+
+findTheName(persons)
+
+
+const testNumbers = [1, 2, 3, 4, 5]
+const doubleNumbers = testNumbers.map((number) => number * 2)
+console.log(doubleNumbers)
