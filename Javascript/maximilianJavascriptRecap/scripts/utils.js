@@ -1,3 +1,2 @@
-export let apiKey = 'abcdefghijklmnopqrstuvwxyz'
-
+// export let apiKey = 'abcdefghijklmnopqrstuvwxyz'
 // export default 'abcdefghijklmnopqrstuvwxyz'
