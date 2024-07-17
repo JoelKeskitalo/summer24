@@ -18,8 +18,8 @@ function App() {
     setHiddenContent(!hiddenContent);
   };
 
-  let showHiddenContent = <HiddenContent />;
   const updateContent = () => {
+    let showHiddenContent = <HiddenContent />;
     if (hiddenContent === true) {
       return showHiddenContent;
     } else {

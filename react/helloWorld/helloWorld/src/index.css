@@ -16,6 +16,10 @@ h1 {
     color: grey;
 }
 
+h2 {
+    color: grey;
+}
+
 p {
     color: grey;
     margin-bottom: 0.1rem;
@@ -41,4 +45,8 @@ p {
 
 #text {
     margin-bottom: 1rem;
+}
+
+main {
+    margin-top: 1rem;
 }
