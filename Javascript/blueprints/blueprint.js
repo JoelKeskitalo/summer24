@@ -35,18 +35,18 @@ for (const key in person) {
     }
 }
 
-// forEach (arrayer)
+// forEach (arrayer) callbkfkn för varje element
 const numbersForEach = [1, 2, 3, 4, 5]
 numbersForEach.forEach((number) => {
     console.log(number)
 })
 
-// filter
+// filter, släpp igenom element som uppfyller uppsatt krav, ny array
 const array = ['joel', 'amanda', 'tim', 'patrik']
 const result = array.filter((name) => name.length > 3)
 console.log(result)
 
-// map 
+// map, kör en funktion på varje element, ny array
 const array1 = [1, 2, 3, 4, 5]
 const doubled = array1.map((number) => number * 2)
 console.log(doubled)
