@@ -1,0 +1,13 @@
+setup simple mvp structure for backend 
+
+create and initiate server
+
+create VS code database 
+
+connect database with cloud.mongo 
+
+create simple frontend
+
+create simple api for frontend
+
+connect simple front end with api and do simple test 
