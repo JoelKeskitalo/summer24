@@ -1,15 +1,18 @@
 import "./NavMenu.scss"
+import Header from "../Header/Header"
 
 function NavMenu() {
   return (
     <div className="main-box">
+      <header>
+        <Header />
+      </header>
       <div className="content-box">
         <h1>Baratheons Bar</h1>
         <div id="navMenu-container">
           <nav>
             <ul>
-              <li>Navigation Menu</li>
-              <li>Beverage Menu</li>
+              <li>Menu</li>
               <li>About</li>
               <li>Register User/login-user/profile</li>
               <li>Contact</li>

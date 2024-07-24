@@ -1,10 +1,13 @@
 import "./Header.scss"
+import bobbyB from "../../resources/pictures/bobbyb.jpg"
 
 function Header() {
   return (
-    <div>
-      <h1>Hej!</h1>
-    </div>
+    <>
+      <header id="bobby-header">
+        <img src={bobbyB}></img>
+      </header>
+    </>
   )
 }
 
