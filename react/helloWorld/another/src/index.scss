@@ -3,5 +3,57 @@
 
 body {
     background-color: $background-color;
-    @include flex-center-column
+    @include flex-center-column;
+}
+
+h1 {
+    font-family: $primary-headline-font;
+    font-size: $base-h1-size;
+    color: $primary-headline-color;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+    text-align: center;
+    transition: color 2s ease
+}
+
+h2 {
+    font-family: $primary-headline-font;
+}
+
+p {
+    font-family: $primary-paragraph-font;
+    font-size: $base-font-size;
+    color: $primary-paragraph-color;
+    text-align: center;
+}
+
+.main-box {
+    @include background-image-sizing;
+    background-image: url('./resources/pictures/bobbysbar.png');
+    border: 3px solid white;
+    padding: 2rem;
+    width: 30rem;
+    height: 40rem;
+}
+
+.content-box {
+    @include flex-center-column;
+}
+
+ul {
+    @include flex-left-column;
+}
+
+li {
+    padding: 0;
+    margin: 0.5rem;
+    list-style: none;
+    font-family: $primary-paragraph-font;
+    font-size: $base-font-size;
+    transition: background-color 2s ease, color 2s ease;
+}
+
+li:hover {
+    color: red;
+    cursor: pointer;
 }

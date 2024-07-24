@@ -1,9 +1,20 @@
-import "./index.scss";
+import "./index.scss"
+import NavMenu from "./components/NavMenu/NavMenu"
+import Header from "./components/Header/Header"
 
 function App() {
-  return <></>;
+  return (
+    <>
+      <header>
+        <Header />
+      </header>
+      <body>
+        <NavMenu />
+      </body>
+    </>
+  )
 }
 
-export default App;
+export default App
 
 // use for react-router later
