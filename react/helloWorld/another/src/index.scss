@@ -39,7 +39,7 @@ p {
 }
 
 .content-box {
-    @include flex-center-column;
+    @include flex-left-column;
 }
 
 ul {
@@ -52,10 +52,16 @@ li {
     list-style: none;
     font-family: $primary-paragraph-font;
     font-size: $base-font-size;
-    transition: background-color 2s ease, color 2s ease;
+
 }
 
-li:hover {
-    color: red;
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.5s ease, color 0.5s ease;
     cursor: pointer;
+}
+
+a:hover {
+    color: red;
 }

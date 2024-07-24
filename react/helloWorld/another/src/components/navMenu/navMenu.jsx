@@ -1,4 +1,5 @@
 import "./NavMenu.scss"
+import { Link } from "react-router-dom"
 import Header from "../Header/Header"
 
 function NavMenu() {
@@ -12,11 +13,21 @@ function NavMenu() {
         <div id="navMenu-container">
           <nav>
             <ul>
-              <li>Menu</li>
-              <li>About</li>
-              <li>Register User/login-user/profile</li>
-              <li>Contact</li>
-              <li>Sponsors</li>
+              <li>
+                <Link to="/menu">Menu</Link>
+              </li>
+              <li>
+                <Link to="/about">About</Link>
+              </li>
+              <li>
+                <Link to="/user">Register User/login-user/profile</Link>
+              </li>
+              <li>
+                <Link to="/contact">Contact</Link>
+              </li>
+              <li>
+                <Link to="/sponsors">Sponsors</Link>
+              </li>
             </ul>
           </nav>
         </div>

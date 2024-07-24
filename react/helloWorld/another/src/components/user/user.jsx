@@ -1,7 +1,7 @@
 function User() {
   return (
-    <div>
-      <h1>Hej</h1>
+    <div className="main-box">
+      <h1>User</h1>
     </div>
   )
 }

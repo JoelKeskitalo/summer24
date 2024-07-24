@@ -1,7 +1,7 @@
 function Sponsors() {
   return (
-    <div>
-      <h1>Test</h1>
+    <div className="main-box">
+      <h1>Sponsor</h1>
     </div>
   )
 }
