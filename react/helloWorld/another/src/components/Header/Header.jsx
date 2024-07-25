@@ -4,7 +4,7 @@ import bobbyB from "../../resources/pictures/bobbyb.jpg"
 function Header() {
   return (
     <>
-      <header id="bobby-header">
+      <header>
         <img src={bobbyB}></img>
       </header>
     </>

@@ -2,4 +2,22 @@
     background-color: rgba(0, 0, 0, 0.6);
     margin-left: 1rem;
     margin-right: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul {
+    display: flex;
+    align-items: left;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price {
+    margin: 0;
+    margin-left: 1rem;
 }

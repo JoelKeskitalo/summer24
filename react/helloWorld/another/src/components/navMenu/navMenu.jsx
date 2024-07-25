@@ -3,13 +3,21 @@ import { Link } from "react-router-dom"
 import Header from "../Header/Header"
 
 function NavMenu() {
+  const barNames = ["Bar", "Pub", "Bastards", "Beverages"]
+
+  const getRandomNumber = (maxNumber) => {
+    return Math.floor(Math.random() * (maxNumber + 1))
+  }
+
+  const randomlyGeneratedBarname = barNames[getRandomNumber(3)]
+
   return (
     <div className="main-box">
       <header>
         <Header />
       </header>
       <div className="content-box">
-        <h1>Baratheons Bar</h1>
+        <h1>Baratheons {randomlyGeneratedBarname}</h1>
         <div id="navMenu-container">
           <nav>
             <ul>
@@ -27,6 +35,9 @@ function NavMenu() {
               </li>
               <li>
                 <Link to="/sponsors">Sponsors</Link>
+              </li>
+              <li>
+                <Link to="/maximilian">Maximilians Playground</Link>
               </li>
             </ul>
           </nav>
