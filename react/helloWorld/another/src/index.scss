@@ -35,7 +35,10 @@ p {
     width: 30rem;
     height: 45rem;
     overflow: hidden;
-    padding: 0
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .content-box {
@@ -50,6 +53,7 @@ li {
     padding: 0;
     margin: 0.5rem;
     list-style: none;
+    text-decoration: underline;
     font-family: $primary-paragraph-font;
     font-size: $base-font-size;
 
@@ -63,5 +67,9 @@ a {
 }
 
 a:hover {
-    color: red;
+    color: rgb(83, 2, 2);
+}
+
+footer {
+    display: flex;
 }

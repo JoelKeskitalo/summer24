@@ -2,7 +2,7 @@ import "../BackButton/BackButton.scss"
 import { useNavigate } from "react-router-dom"
 import backImage from "../../resources/pictures/back.png"
 
-function BackButton(props) {
+function BackButton() {
   const navigate = useNavigate()
   const goToMainPage = () => {
     navigate("/")
@@ -10,9 +10,7 @@ function BackButton(props) {
 
   return (
     <div>
-      <button onClick={goToMainPage}>
-        <img className="back-image" src={backImage}></img>
-      </button>
+      <img className="back-image" src={backImage} onClick={goToMainPage}></img>
     </div>
   )
 }

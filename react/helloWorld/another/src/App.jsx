@@ -1,10 +1,5 @@
 import "./index.scss"
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  useNavigate,
-} from "react-router-dom"
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 
 import About from "./components/About/About"
 import Contact from "./components/Contact/Contact"
@@ -13,8 +8,6 @@ import NavMenu from "./components/NavMenu/NavMenu"
 import User from "./components/User/User"
 import Sponsors from "./components/Sponsors/Sponsors"
 import Maximilian from "./components/Maximilian/Maximilian"
-
-import BackButton from "./components/BackButton/BackButton"
 
 function App() {
   const randomBeerPrice = () => {

@@ -1,4 +1,5 @@
 import "./Menu.scss"
+import Footer from "../Footer/Footer"
 
 function Menu(props) {
   return (
@@ -31,6 +32,9 @@ function Menu(props) {
           </ul>
         </nav>
       </div>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   )
 }

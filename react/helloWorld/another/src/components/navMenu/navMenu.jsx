@@ -16,8 +16,8 @@ function NavMenu() {
       <header>
         <Header />
       </header>
+      <h1>Baratheons {randomlyGeneratedBarname}</h1>
       <div className="content-box">
-        <h1>Baratheons {randomlyGeneratedBarname}</h1>
         <div id="navMenu-container">
           <nav>
             <ul>
