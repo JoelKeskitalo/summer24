@@ -10,10 +10,10 @@ h1 {
     font-family: $primary-headline-font;
     font-size: $base-h1-size;
     color: $primary-headline-color;
-    text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.5);
-    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(210, 20, 20, 0.5);
     text-align: center;
-    transition: color 2s ease
+    transition: color 2s ease;
+    text-decoration: underline;
 }
 
 h2 {

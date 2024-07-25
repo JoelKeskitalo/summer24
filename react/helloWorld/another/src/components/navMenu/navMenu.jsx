@@ -15,33 +15,31 @@ function NavMenu() {
     <div className="main-box">
       <header>
         <Header />
+        <h1>Baratheons {randomlyGeneratedBarname}</h1>
       </header>
-      <h1>Baratheons {randomlyGeneratedBarname}</h1>
       <div className="content-box">
-        <div id="navMenu-container">
-          <nav>
-            <ul>
-              <li>
-                <Link to="/menu">Menu</Link>
-              </li>
-              <li>
-                <Link to="/about">About</Link>
-              </li>
-              <li>
-                <Link to="/user">Register User/login-user/profile</Link>
-              </li>
-              <li>
-                <Link to="/contact">Contact</Link>
-              </li>
-              <li>
-                <Link to="/sponsors">Sponsors</Link>
-              </li>
-              <li>
-                <Link to="/maximilian">Maximilians Playground</Link>
-              </li>
-            </ul>
-          </nav>
-        </div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/menu">Menu</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/user">Register User/login-user/profile</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+            <li>
+              <Link to="/sponsors">Sponsors</Link>
+            </li>
+            <li>
+              <Link to="/maximilian">Maximilians Playground</Link>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
   )
