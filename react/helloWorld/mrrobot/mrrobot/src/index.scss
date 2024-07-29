@@ -1,0 +1,39 @@
+// global styles
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+li {
+  color: white;
+  list-style: none;
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  cursor: pointer;
+}
+
+p {
+  color: white;
+}
+
+main {
+  background-color: black;
+}
+
+.content-box {
+  margin-top: 1rem;
+  border: 3px solid rgb(0, 28, 0);
+}
