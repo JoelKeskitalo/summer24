@@ -1,6 +1,6 @@
 COMPONENTS
 
-JSX = Javascript Syntax Extension: used to describe & create HTML elements in Javascript in a DECLERATIVE way 
+JSX = Javascript Syntax Extension: used to describe & create HTML elements in Javascript in a DECLERATIVE way
 
 STATE
 
@@ -8,4 +8,4 @@ PROPS
 
 HOOKS
 
-
+{} - tells the JSX that you want to output a dynamic value - only expressions that directly produce a value (not if else, etc)
