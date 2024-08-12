@@ -1,0 +1,26 @@
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+nav {
+
+}
+
+ul {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+li {
+    margin: 1rem;
+    list-style: none;
+    color: white;
+}
+
+li:hover {
+    color: red;
+    cursor:default;
+}
