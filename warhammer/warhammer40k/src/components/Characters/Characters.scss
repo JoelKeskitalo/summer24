@@ -1,8 +1,13 @@
 .content-box {
-    padding: 2rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.content-box h1 {
+    margin-bottom: 2rem;
+    margin-top: 0;
 }
 
 .characters-wrapper {
@@ -16,11 +21,11 @@
 .character-wrapper {
     border: 3px solid rgb(72, 2, 2);
     border-radius: 1rem;
-    padding: 1.5rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     text-align: center;
@@ -52,4 +57,16 @@ p {
     &:hover {
         background-color: rgb(100, 3, 3);
     }
+}
+
+
+.character-image {
+    width: 60%;
+}
+
+.character-description {
+    color: rgb(255, 255, 255);
+    font-size: 0.5rem;
+    line-height: 1rem;
+    font-style: italic;
 }
