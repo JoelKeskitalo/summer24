@@ -1,0 +1,62 @@
+.contact-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 1rem;
+    color: white;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+label {
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.9rem;
+    color: grey;
+    margin-bottom: 0.5rem;
+}
+
+input, textarea {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid rgb(72, 2, 2);
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+    font-family: "Orbitron", sans-serif;
+    font-size: 0.9rem;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+.contact-button {
+    background-color: rgb(72, 2, 2);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    color: white;
+    cursor: pointer;
+    font-family: "Orbitron", sans-serif;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 1rem;
+
+    &:hover {
+        background-color: rgb(100, 3, 3);
+        transform: scale(1.05);
+    }
+}
