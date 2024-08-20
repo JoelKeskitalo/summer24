@@ -4,6 +4,7 @@ import Nav from "../src/components/Nav/Nav"
 import Menu from "../src/components/Menu/Menu"
 import About from "./components/About/About"
 import CreateProfile from "./components/CreateProfile/CreateProfile"
+import Status from "./components/Status/Status"
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/menu" element={<Menu />} />
         <Route path="/about" element={<About />} />
         <Route path="/createprofile" element={<CreateProfile />} />
+        <Route path="/status" element={<Status />} />
       </Routes>
     </div>
   )

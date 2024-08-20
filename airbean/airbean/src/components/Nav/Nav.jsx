@@ -18,7 +18,9 @@ function Nav() {
             <Link to="/createprofile">Min profil</Link>
           </li>
           <hr />
-          <li>Orderstatus</li>
+          <li>
+            <Link to="/status">Orderstatus</Link>
+          </li>
         </ul>
       </nav>
     </div>
