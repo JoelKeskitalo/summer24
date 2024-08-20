@@ -1,9 +1,10 @@
 import "./Footer.scss"
+import footerImage from "../../assets/pictures/footer.png"
 
 function Footer() {
   return (
-    <div>
-      <h1>Footer</h1>
+    <div className="footer-container">
+      <img src={footerImage} id="footer-image"></img>
     </div>
   )
 }

@@ -10,9 +10,13 @@ function Nav() {
             <Link to="/menu">Meny</Link>
           </li>
           <hr />
-          <li>Vårt kaffe</li>
+          <li>
+            <Link to="/about">Vårt kaffe</Link>
+          </li>
           <hr />
-          <li>Min profil</li>
+          <li>
+            <Link to="/createprofile">Min profil</Link>
+          </li>
           <hr />
           <li>Orderstatus</li>
         </ul>

@@ -1,5 +1,6 @@
 import "./Menu.scss"
 import Header from "../Header/Header"
+import Footer from "../Footer/Footer"
 import addImage from "../../assets/pictures/add.png"
 
 function Menu() {
@@ -43,7 +44,9 @@ function Menu() {
           </div>
         </div>
       </main>
-      <footer></footer>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   )
 }
