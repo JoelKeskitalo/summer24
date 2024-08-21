@@ -5,8 +5,53 @@
     background-size: 100% auto;
     background-position: bottom center;
     background-repeat: no-repeat;
-}
-
-#navigation-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #navigation-image {
     height: 3rem;
-}
+    margin-left: 2rem;
+  }
+  
+  .cart-icon-link {
+    text-decoration: none;
+  }
+  
+  .cart-icon {
+    width: 3rem;
+    height: 3rem;
+    background-color: #2F2926;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-right: 2rem;
+  }
+  
+  .cart-icon::before {
+    content: '';
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 2px;
+    border: 2px solid white;
+    position: relative;
+    background: none;
+  }
+  
+  .cart-icon::after {
+    content: '';
+    display: block;
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: white;
+    position: absolute;
+    bottom: 0.4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+  }
+  

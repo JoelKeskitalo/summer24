@@ -1,4 +1,5 @@
 import "./Status.scss"
+import { Link } from "react-router-dom"
 import helecopterImage from "../../assets/pictures/helecopter.png"
 
 function Status() {
@@ -8,7 +9,9 @@ function Status() {
       <img src={helecopterImage}></img>
       <h1>Din beställning är på väg!</h1>
       <p>13 minuter...</p>
-      <button>Ok, cool!</button>
+      <Link to="/nav">
+        <button>Ok, cool!</button>
+      </Link>
     </div>
   )
 }

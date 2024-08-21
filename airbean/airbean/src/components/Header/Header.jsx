@@ -8,6 +8,9 @@ function Header() {
       <Link to="/nav">
         <img src={navIcon} id="navigation-image"></img>
       </Link>
+      <Link to="/cart" className="cart-icon-link">
+        <div className="cart-icon"></div>
+      </Link>
     </div>
   )
 }
